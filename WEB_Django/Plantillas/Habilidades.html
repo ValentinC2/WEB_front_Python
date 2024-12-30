@@ -1,0 +1,69 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8" />
+        <title>Portfolio |Habilidades</title>
+        <link rel="stylesheet" href='{% static "CSS/Estilos.css" %}'>
+        <link rel="shortcut icon" href='{% static "Imagenes/Logo.png" %}'>
+
+    </head>
+
+    <body> 
+
+        {% include "Encabezado.html" %}
+        
+        <div class="text">
+            <h1>Mis habilidades</h1>   
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mauris risus,<br>
+                volutpat a consectetur nec, iaculis ut mauris. Donec aliquet fermentum aliquam. <br>
+                Vivamus et neque molestie, tincidunt est nec, viverra quam. Curabitur orci nunc,<br>
+                malesuada sit amet placerat eget, interdum at ante. Cras sodales tortor a sapien <br>
+                laoreet varius. Duis viverra orci sollicitudin ultricies iaculis. Aliquam et <br>
+                facilisis nisi. Ut posuere rutrum mattis.<br>
+                Nullam nisi neque, placerat sed sodales vel, maximus vitae enim. Aliquam libero <br>
+                tortor, viverra eget lacinia ac, ullamcorper vel massa. Fusce laoreet velit id <br>
+                nunc laoreet semper.
+            </p>
+            <br>
+            <h2 style="margin-bottom: 30px;">Experincia laboral</h2>
+
+            <h3>WELCOME 2 PARADISE SL</h3>
+            <p style="margin-bottom: 30px;">
+                Jun 2021-Ago 2021
+                <br>
+                Funciones:
+                Limpieza y desinfeccion del parque de atracciones Warner Madrid.
+            </p>
+
+            <h3>Miguel Angel del Sanz</h3>
+            <p>
+                Mayo 2022
+                <br>
+                Funciones:
+                Recoleccion de productos agricolas.
+            </p>
+        </div>>
+
+        <!--Este div contiene las habilidades con una barra de progreso-->
+        <div class="habilidades">
+            <div>            
+                <h2>Python</h2>
+                <footer><div class="linea1"></div></footer>
+                <br>
+                <h2>Excel</h2>
+                <footer><div class="linea2"></div></footer>
+                <br>
+                <h2>Front-end</h2>
+                <footer><div class="linea3"></div></footer>
+                <br>
+                <h2>Back-end</h2>
+                <footer><div class="linea4"></div></footer>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8" />
+        <title>Portfolio |Contacto</title>
+ 
+        <link rel="stylesheet" href='{% static "Estilos.css" %}'>
+        <link rel="shortcut icon" href='{% static "Imagenes/Logo.png" %}'>
+    </head>
+
+    <body>
+
+        {% include "Encabezado.html" %}
+
+        <div class="text">
+            <h1>Contactame</h1>
+            <p>
+                It is a long established fact that a reader will be distracted by the readable content of <br>
+                a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less <br>
+                normal distribution of letters, as opposed to using 'Content here, content here', making it look <br>
+                like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as <br>
+                their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their <br>
+                infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose <br>
+                (injected humour and the like).
+            </p>
+
+        </div>
+
+        <!--Cuadro de formulario de contacto-->
+        <form>
+            <section class="cuadro-contacto">
+                <h4>Formulario de contacto</h4>
+                <label for="email"><input id="email" class="casilla-formulario" type="text" name="email" placeholder="Ingrese su email"></label>
+                <label for="numero"><input id="numero" class="casilla-formulario" type="text" name="numero" placeholder="Ingrese su numero de telefono" ></label>
+                <label for="motivo"><input id="motivo" class="casilla-formulario" type="text" name="motivo" placeholder="Ingrese su motivo de contacto"></label>
+                <input class="boton-enviar" type="button" onclick="validar()" value="Enviar">
+            </section>
+        </form>
+
+    </body>
+</html>

@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        
+        <link rel="stylesheet" href='{% static "CSS/Estilos.css" %}'>
+        <link rel="shortcut icon" href='{% static "Imagenes/Logo.png" %}'>
+
+    </head>
+
+    <header>
+
+        <!--Logo con el nombre -->
+        <div class="logo">
+            <img src='{% static "Imagenes/Logo.png" %}' class="logo-img" alt="Logo">
+
+            <span class="logo-nombre">Valentin Tigovan</span>
+        </div>
+        
+        <!--Lista de entradas-->
+        <ul class="encabezado">         
+            <li><a href="{% url 'Proyectos' %}">Proyectos</a></li>
+            <li><a href='{% url "Habilidades" %}'>Hablilidades</a></li>
+            <li id="ultimoborde"><a href='{% url "Contacto" %}'>Contacto</a></li>
+        </ul>
+
+        <!--Iconos que redireccionan a linkedin y github -->
+        <div style="margin-top: 280px;">
+            <a href="https://www.linkedin.com/in/valentin-tigovan-634759193/" style="margin-left: 20px;"><img class="logos" src='{% static "Imagenes/in.png" %}' alt=""></a>
+            <a href="https://github.com/ValentinIA"><img class="logos" src='{% static "Imagenes/git.png" %}' alt=""></a>
+        </div>
+
+    </header>
+</html>

@@ -1,0 +1,58 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8" />
+        <title>Portfolio |Proyectos</title>
+        <link rel="stylesheet" href='{% static "CSS/Estilos.css" %}'>
+        <link rel="shortcut icon" href='{% static "Imagenes/Logo.png" %}'>
+        
+    </head>
+
+    <body>
+
+        {% include "Encabezado.html" %}
+
+        <div class="text">
+            <h1>Mis proyectos</h1>
+            
+            <div class="proyectos">
+                <div class="proyecto">
+                    <img src='{% static "Imagenes/Subneting.png" %}' class="imagenproyecto">
+
+                    <div class="descripcion">
+                        <h2>Calculador de subneting</h2>
+                        <p>
+                            El anio pasado nos pusieron muchas practicas de subneting de la cuales temine cansado,<br>
+                            me parecia inutil calcularlo a mano ya que podria hacer en un momento un programa <br>
+                            en python asique se lo comente al profesor para hacerlo si me subia la nota y accedio.
+                        </p>
+                        <br>
+                        <a href="https://github.com/ValentinIA/Subneting" class="enlace">Codigo en guithub</a>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="proyecto">
+                    <img src='{% static "Imagenes/TacaTaca_x4.png" %}' class="imagenproyecto">
+
+                    <div class="descripcion">
+                        <h2>Carrito MODELv5000</h2>
+                        <p>
+                            Este es un prototipo hecho por Motomami Corps para un proyecto de la asignatura de empresa,<br>
+                            se trata de un andador inteligente porque a quien no le ha pasado que vaya acompaniando a una  <br>
+                            persona problemas de movilidad como mi abuela y se le quede incrustado el andador en una calzada <br>
+                            romana, esta es la solucion.
+                        </p>
+                    </div>
+                </div>
+            
+            </div>
+
+    </body>
+    
+</html>

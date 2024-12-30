@@ -1,0 +1,156 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8" />
+        <title>Portfolio |Valentin Tigovan</title>
+        <link rel="stylesheet" href='{% static "CSS/Estilos.css" %}'>
+        <link rel="shortcut icon" href='{% static "Imagenes/Logo.png" %}'>
+        
+    </head>
+
+    <body>
+
+        {% include "Encabezado.html" %}
+
+        <!-- Este div agrupa por secciones el resto de entradas-->
+        <div class="text">
+            <section style="margin-bottom: 300px;">
+                <h1 class="titulo-princial1">Hola,
+                    </h1>
+                    <h1 class="titulo-princial2">soy Valentin!</h1>
+                    
+                    <p>
+                        Estudio Sistemas Microinformaticos y Redes en el instituto IES Calderon de la Barca y esto es una practica:
+                        <br>
+                        <br>
+                        Curabitur erat massa, imperdiet ac hendrerit eu, vulputate nec leo. Suspendisse turpis lorem, luctus a <br>
+                        turpis a, vulputate dignissim arcu. Sed interdum, eros vitae cursus vulputate, quam lorem finibus felis, <br>
+                        in tincidunt risus purus quis quam. Nullam orci mauris, hendrerit non turpis ut, interdum finibus enim. <br>
+                        Praesent sagittis, justo vel scelerisque dignissim, ex sapien convallis enim, tempor vulputate erat ante <br>
+                        at lectus. Maecenas sed tellus sagittis, vulputate odio id, aliquet nisl. Donec enim magna, tincidunt <br>
+                        pellentesque lacus quis, vulputate feugiat ipsum.<br>
+                        <br>
+                        Mauris ultrices et dolor maximus ornare. Proin elementum sed enim et tincidunt. Donec posuere, mauris at <br>
+                        molestie vestibulum, enim felis auctor orci, quis tincidunt massa felis at enim. In hac habitasse platea dictumst. <br>
+                        Nam ultrices elit a ultrices pharetra. Nunc sit amet nibh pellentesque, viverra risus a, elementum justo. <br>
+                        Etiam ut ligula tortor. Nullam elit elit, tempus viverra est sit amet, iaculis pretium lectus.
+                    </p>   
+            </section>
+            
+            <section style="margin-bottom: 300px;">
+                <h1>Mis proyectos</h1>
+                
+                    <div class="proyecto">
+                        <img src="Imagenes/Subneting.PNG" class="imagenproyecto">
+
+                        <div class="descripcion">
+                            <h2>Calculador de subneting</h2>
+                            <p>
+                                El anio pasado nos pusieron muchas practicas de subneting de la cuales temine cansado,
+                                me parecia inutil calcularlo a mano ya que podria hacer en un momento un programa 
+                                en python asique se lo comente al profesor para hacerlo si me subia la nota y accedio.
+                            </p>
+                            <br>
+                            <a href="https://github.com/ValentinIA/Subneting" class="enlace">Codigo en guithub</a>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="proyecto">
+                        <img src="Imagenes/TacaTaca_x4.png" class="imagenproyecto">
+
+                        <div class="descripcion">
+                            <h2>Carrito MODELv5000</h2>
+                            <p>
+                                Este es un prototipo hecho por Motomami Corps para un proyecto de la asignatura de empresa,
+                                se trata de un andador inteligente porque a quien no le ha pasado que vaya acompaniando a una  
+                                persona problemas de movilidad como mi abuela y se le quede incrustado el andador en una calzada
+                                romana, esta es la solucion.
+                        </div>
+                    </div>
+            </section>
+
+            <section style="margin-bottom: 300px;">
+                <h1>Mis habilidades</h1>   
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mauris risus,<br>
+                        volutpat a consectetur nec, iaculis ut mauris. Donec aliquet fermentum aliquam. <br>
+                        Vivamus et neque molestie, tincidunt est nec, viverra quam. Curabitur orci nunc,<br>
+                        malesuada sit amet placerat eget, interdum at ante. Cras sodales tortor a sapien <br>
+                        laoreet varius. Duis viverra orci sollicitudin ultricies iaculis. Aliquam et <br>
+                        facilisis nisi. Ut posuere rutrum mattis.<br>
+                        Nullam nisi neque, placerat sed sodales vel, maximus vitae enim. Aliquam libero <br>
+                        tortor, viverra eget lacinia ac, ullamcorper vel massa. Fusce laoreet velit id <br>
+                        nunc laoreet semper.
+                    </p>
+                    <br>
+                    <br>
+                    <h2 style="margin-bottom: 40px;">Experincia laboral</h2>
+
+                    <h3>WELCOME 2 PARADISE SL</h3>
+                    <p style="margin-bottom: 30px;">
+                        Jun 2021-Ago 2021
+                        <br>
+                        Funciones:
+                        Limpieza y desinfeccion del parque de atracciones Warner Madrid.
+                    </p>
+
+                    <h3>Miguel Angel del Sanz</h3>
+                    <p>
+                        Mayo 2022
+                        <br>
+                        Funciones:
+                        Recoleccion de productos agricolas.
+                    </p>
+
+                    <div style="top: 66%; left: 57%;" class="habilidades">
+                        <div>            
+                            <h2>Python</h2>
+                            <footer><div class="linea1"></div></footer>
+                            <br>
+                            <h2>Excel</h2>
+                            <footer><div class="linea2"></div></footer>
+                            <br>
+                            <h2>Front-end</h2>
+                            <footer><div class="linea3"></div></footer>
+                            <br>
+                            <h2>Back-end</h2>
+                            <footer><div class="linea4"></div></footer>
+                        </div>
+                    </div>
+            </section>
+
+            <section>
+                <h1>Contactame</h1>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content of <br>
+                        a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less <br>
+                        normal distribution of letters, as opposed to using 'Content here, content here', making it look <br>
+                        like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as <br>
+                        their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their <br>
+                        infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose <br>
+                        (injected humour and the like).
+                    </p>
+
+                    <form>
+                        <section style="top: 100%; left: 0%; padding-left: 0%;" class="cuadro-contacto">
+                            <h4>Formulario de contacto</h4>
+                            <label for="email"><input id="email" class="casilla-formulario" type="text" name="email" placeholder="Ingrese su email"></label>
+                            <label for="numero"><input id="numero" class="casilla-formulario" type="text" name="numero" placeholder="Ingrese su numero de telefono" ></label>
+                            <label for="motivo"><input id="motivo" class="casilla-formulario" type="text" name="motivo" placeholder="Ingrese su motivo de contacto"></label>
+                            <input class="boton-enviar" type="button" onclick="validar()" value="Enviar">
+                        </section>
+                    </form>
+            </section>
+
+        </div>
+
+    </body>
+    
+</html>
